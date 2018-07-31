@@ -1,0 +1,11 @@
+<h1>Doses</h1>
+<ul>
+  <% @dose.each do |dose| %>
+  <li>
+    <%= link_to dose.description %>
+    <%#= link_to 'd', destroy_path(task), method: :delete, data: { confirm: "Are you sure?"} %>
+
+  </li>
+  <% end %>
+</ul>
+

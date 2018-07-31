@@ -1,0 +1,11 @@
+<h1>Cocktails home</h1>
+<ul>
+  <% @cocktail.each do |cocktail| %>
+  <li>
+    <%= link_to cocktail.name %>
+    <%#= link_to 'd', destroy_path(task), method: :delete, data: { confirm: "Are you sure?"} %>
+
+  </li>
+  <% end %>
+</ul>
+
